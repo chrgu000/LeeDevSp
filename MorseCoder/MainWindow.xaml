@@ -1,0 +1,32 @@
+﻿<Window x:Class="MorseCoder.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MorseCoder"
+        mc:Ignorable="d"
+        Icon="morse_code_48px.ico"
+        Title="摩斯密码助手" Height="350" Width="525">
+    <Grid Margin="12,12,12,20">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="5"/>
+            <RowDefinition/>
+            <RowDefinition Height="30"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="50"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <TextBlock Text="英文内容" Grid.Column="0" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" />
+        <TextBlock Text="摩斯密码(字符间空格分隔，单词间“/”分隔)" TextWrapping="Wrap" Grid.Column="0" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center" />
+        <TextBox Name="txtEnglish" Grid.Column="1" Grid.Row="0" AcceptsReturn="True" AutoWordSelection="True" TextWrapping="Wrap" VerticalScrollBarVisibility="Auto" />
+        <TextBox Name="txtMorseCode" Grid.Column="1" Grid.Row="2" AcceptsReturn="True" TextWrapping="Wrap" VerticalScrollBarVisibility="Auto" />
+        <StackPanel Grid.Row="3" Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,5,0,0">
+            <CheckBox Name="ckbFromEnglish" Content="英文转摩斯密码" VerticalAlignment="Center" IsChecked="True"/>
+            <CheckBox Name="ckbEnglishSentence" Content="内容为英文句子" VerticalAlignment="Center" Margin="5,5,0,5" IsEnabled="False" />
+            <Button Name="btnTransfer" Content="转 换" Width="80" Margin="5,0,0,0"/>
+        </StackPanel>
+    </Grid>
+</Window>
