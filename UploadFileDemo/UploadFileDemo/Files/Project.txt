@@ -1,0 +1,96 @@
+http://git.5ug.com:808/tfs
+fullnameljlAa1580.wellforlog
+
+183.60.143.29 git.5ug.com域名
+
+公司官网www.5ug.com登入名还是原来的admin密码修改成了zhongku5ug.com=>jiangxinyun5ug.com
+
+
+
+http://w3schools.bootcss.com/bootstrap/bootstrap_jumbotron_header.html
+
+
+账号：Administrator
+远程密码:71BE65E63A64#%&_D972E1a3D4A365Rtw
+端口号：34158
+IP:183.60.143.29:34158
+
+匠芯
+服务器1：
+    IP:139.219.193.10
+    管理员账号：cloud
+    管理员密码：Cloud@azure123
+    端口号：8899
+
+
+
+
+
+收款账户：MerchantAccmount - 1377165502（微信支付商户号）
+收款Key：MerchantKey - wxbabc0c70725d4c46（公众号APPID）
+收款秘钥：MerchantSecretKey - zhongkukejiweixinzhifuapimiyao16（API秘钥）
+   a7c2b1ba7791b0c098152d0ae439edd7（AppSecret(应用密钥)）
+
+--------------------
+收款账户：1411014902
+收款Key：wxafa3e0bd77dbb957
+收款秘钥：1y42ihepwirpydq0i895ilqizfda9xae
+收款邮箱：9dc7bf4405ac315d05c1d9dd0787af2f
+
+
+==============================================
+微信服务号
+账号:21639183@qq.com
+密码：zk00000000
+
+微信支付商户号：1377165502
+商户平台登录帐号：1377165502@1377165502
+商户平台登录密码：617197
+申请对应的公众号：中酷科技有限公司（）
+公众号APPID:wxbabc0c70725d4c46
+
+AppSecret(应用密钥)a7c2b1ba7791b0c098152d0ae439edd7
+API秘钥zhongkukejiweixinzhifuapimiyao16
+
+===============================================
+APP支付：
+open.weixin.com
+25328838@qq.com   songMath10
+1452790002
+
+商户平台登录帐号
+1452790002@1452790002
+商户平台登录密码
+577139
+wx1354e062b7682ed8
+应用密钥：1178b7bd5cdf9d2322d6ef415e29f96d
+API密钥：zhongkukejijiangxinfkejiszuwu017
+
+----------------------
+com.ljl.jackie.appwxpay
+2334e8b469656b0cbf6e9d3fbf4ea40e
+
+pwd:leven.com.cn
+应用包名：org.levensoft.zkcloudapp
+应用签名：f7cabd0119d24f0098c418bcfd861c9c
+
+
+VPN:
+刘志 2016-12-16 15:37
+ip:118.89.25.216
+刘志 2016-12-16 15:37
+账号：zhongku
+刘志 2016-12-16 15:37
+密码：ZK.5ug.com
+
+
+====================================
+代付：匠芯
+https://mcht.openepay.com/merchants/
+商户号：106020161216004
+操作员ID：admin
+密码：123456sS
+
+
+
+

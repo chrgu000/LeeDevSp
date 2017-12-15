@@ -1,0 +1,72 @@
+﻿namespace FDInput
+{
+    partial class FormMain
+    {
+        /// <summary>
+        /// 必需的设计器变量。
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// 清理所有正在使用的资源。
+        /// </summary>
+        /// <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows 窗体设计器生成的代码
+
+        /// <summary>
+        /// 设计器支持所需的方法 - 不要修改
+        /// 使用代码编辑器修改此方法的内容。
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.lblTip = new System.Windows.Forms.Label();
+            this.lvItems = new System.Windows.Forms.ListView();
+            this.SuspendLayout();
+            // 
+            // lblTip
+            // 
+            this.lblTip.AutoSize = true;
+            this.lblTip.Location = new System.Drawing.Point(0, 0);
+            this.lblTip.Name = "lblTip";
+            this.lblTip.Size = new System.Drawing.Size(0, 12);
+            this.lblTip.TabIndex = 0;
+            // 
+            // lvItems
+            // 
+            this.lvItems.Location = new System.Drawing.Point(0, 25);
+            this.lvItems.Name = "lvItems";
+            this.lvItems.Size = new System.Drawing.Size(478, 41);
+            this.lvItems.TabIndex = 1;
+            this.lvItems.UseCompatibleStateImageBehavior = false;
+            // 
+            // FormMain
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(483, 89);
+            this.Controls.Add(this.lvItems);
+            this.Controls.Add(this.lblTip);
+            this.Name = "FormMain";
+            this.Text = "输入法示例";
+            this.Load += new System.EventHandler(this.FormMain_Load);
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.Label lblTip;
+        private System.Windows.Forms.ListView lvItems;
+    }
+}
+

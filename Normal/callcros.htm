@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>跨域测试</title>
+<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+</head>
+<body>
+	<h1>测试</h1>
+	<input type="button" id="btncall" value="调用">
+	<script>
+		$(function(){
+			$("#btncall").click(function(){				
+				$.ajax({
+					type: 'GET',
+					contentType: 'application/json',
+					url: 'http://localhost:900/AppChat/Authorize?UserName=Lee&Password=123456',
+					dataType: 'application/json',
+					success: function(result) {
+						alert('success: ' + result);
+					},
+					error: function(result, status) {
+						alert('error: ' + status);
+					}
+				});
+			});
+		});
+	</script>
+</body>
+</html>

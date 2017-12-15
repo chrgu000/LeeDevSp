@@ -1,0 +1,17 @@
+﻿@model IEnumerable<ViewComponentAbout.ViewModels.TagViewModel>
+
+<style>
+    ul li {color:purple;font-style:italic;}
+</style>
+
+@if(Model.Any())
+{
+    <ul>
+        @foreach(var tag in Model)
+        {
+            <li>
+                [@tag.Id] @tag.Name
+            </li>
+        }
+    </ul>
+}

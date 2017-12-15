@@ -1,0 +1,30 @@
+﻿<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Login</title>
+</head>
+<body>
+    <form asp-controller="Account" asp-action="Login" method="post" class="form-horizontal" asp-route-returnurl="@ViewData["ReturnUrl"]" role="form">
+        <div class="form-group">
+            <div class="col-md-offset-1 label-danger">@ViewBag.ErrMsg</div>
+        </div>
+        <div class="form-group">
+            <label class="col-md-2 control-label">UserName</label>
+            <div class="col-md-10">
+                <input type="text" name="username" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-md-2 control-label">Password</label>
+            <div class="col-md-10">
+                <input type="password" name="password" />
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <button type="submit" class="btn btn-default">Login</button>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

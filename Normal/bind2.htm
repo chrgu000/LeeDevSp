@@ -1,0 +1,46 @@
+<html>
+<head>
+<title>极简双向绑定</title>
+
+<script type="text/javascript">
+/*var objTest = {};
+Object.defineProperty(objTest,'test',{
+	set:function(newVal){
+		document.getElementById('a').value = newVal;
+		document.getElementById('b').innerHTML = newVal;
+	}
+});
+
+document.addEventListener('keyup',function(e){
+	objTest.test = e.target.value;console.log('xx')
+});*/
+</script>
+</head>
+<body>
+	<div id="app">
+		<input type="text" id="a" />
+		<span id="b"></span>
+	</div>
+	<div id='app2'></div>
+</body>
+</html>
+
+<script type="text/javascript">
+var dom = nodeToFragment(document.getElementById('app'));
+console.log(dom);
+
+function nodeToFragment(node){
+	var flag = document.createDocumentFragment();
+	var child;
+	while(child = node.firstChild){
+		console.log(child)
+		
+		document.getElementById('app2').appendChild(child);
+		flag.appendChild(child); // 劫持node的所有子节点
+	}
+	return flag;
+}
+
+document.getElementById('app').appendChild(dom); // 返回到app中
+
+</script>

@@ -1,0 +1,12 @@
+
+packages
+
+# User files
+*.user
+.vs/
+
+# Build results
+[Dd]ebug/
+[Rr]elease/
+[Bb]in/
+[Oo]bj/

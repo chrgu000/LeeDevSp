@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>json obj</title>
+    <script src="js/msgqueue.js"></script>
+    <script type="text/javascript">
+        var obj = {
+            name: 'jackie',
+            age: 12
+        };
+        obj.address = 'GD SZ';
+
+        var q = new Queue();
+        q.enqueue(obj);
+        console.log(q.count())
+        console.log(q.toString());
+
+        var q1 = new Queue(JSON.stringify);
+        q1.enqueue(obj);
+        var obj1 = {
+            name: "frank",
+            age: 30,
+            gender: "male"
+        };
+        q1.enqueue(obj1);
+        console.log(q1)
+
+        var obj2 = q1.dequeue();
+        console.log(obj2);
+        console.log(q1.count())
+
+        var o1 = {
+            name: "nice",
+            age: 3
+        };
+        var o2 = {
+            name: "nice1",
+            age: 13
+        };
+        var o3 = {
+            name: "nice2",
+            age: 23
+        };
+        var arr = [
+            o1,
+            o2,
+            o3
+        ];
+        q1.enqueue(o1, o2, o3);
+        console.log(q1.count());
+        var o4 = q1.dequeue();
+        console.log(o4)
+
+        var o5 = q1.dequeuebatch(o => o.name.length == 5);
+        console.log(o5)
+
+        console.log(q1.count());
+        console.log("how many elements now:");
+        while (!q1.empty()) {
+            console.log(q1.dequeue());
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

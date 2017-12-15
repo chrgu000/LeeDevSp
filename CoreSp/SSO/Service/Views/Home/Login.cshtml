@@ -1,0 +1,10 @@
+﻿@{
+    ViewData["Title"] = "Login";
+    var backUrl = ViewBag.BackUrl;
+}
+<form action="/Home/Login" method="post">
+    name:<input name="name" type="text" />
+    password:<input name="password" type="password" />
+    <input type="hidden" name="backUrl" value="@backUrl" />
+    <input type="submit" value="login" />
+</form>

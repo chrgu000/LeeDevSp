@@ -1,0 +1,35 @@
+<html>
+<head>
+<title>Test</title>
+<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+<script>
+    $(function () {
+		$('ul li').first().removeClass('bgRed');
+		$('ul li').last().addClass('bgRed');
+        $("ul li").each(function (index) {
+            $(this).click(function () {
+				alert(index);
+                //$("#BoundUser").val(index == 0);
+            });
+        });
+    });   
+    
+</script>
+<style>
+ .bgRed{background-color:red;}
+ .bgBlue{background-color:blue;}
+ .fontLine{font-weight:bold;}
+</style>
+</head>
+<body>
+ <div>
+  <ul>
+	<li class='bgRed fontLine'>Hello<a href="#">A</a></li>
+	<li><a href="#">B</a></li>
+	<li><a href="#">C</a></li>
+	<li><a href="#">D</a></li>
+	<li><a href="#">E</a></li>
+  </ul>
+ </div>
+</body>
+</html>

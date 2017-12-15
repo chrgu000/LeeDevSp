@@ -1,0 +1,16 @@
+﻿2017-04-26 12:59:04,099 [1] INFO  NETCorelog4net [(null)] - NETCorelog4net log
+2017-04-26 12:59:04,155 [1] INFO  NETCorelog4net [(null)] - test log
+2017-04-26 12:59:04,155 [1] ERROR NETCorelog4net [(null)] - error
+2017-04-26 12:59:04,155 [1] INFO  NETCorelog4net [(null)] - linezero
+2017-04-26 13:04:33,135 [1] INFO  NETCorelog4net [(null)] - NETCorelog4net log
+2017-04-26 13:04:33,198 [1] INFO  NETCorelog4net [(null)] - test log
+2017-04-26 13:04:33,198 [1] ERROR NETCorelog4net [(null)] - error
+2017-04-26 13:04:33,198 [1] INFO  NETCorelog4net [(null)] - linezero
+2017-04-26 13:33:44,877 [1] INFO  NETCorelog4net [(null)] - NETCorelog4net log
+2017-04-26 13:33:44,924 [1] INFO  NETCorelog4net [(null)] - test log
+2017-04-26 13:33:44,924 [1] ERROR NETCorelog4net [(null)] - error
+2017-04-26 13:33:44,924 [1] INFO  NETCorelog4net [(null)] - linezero
+2017-04-26 13:36:54,108 [1] INFO  NETCorelog4net [(null)] - NETCorelog4net log
+2017-04-26 13:36:54,155 [1] INFO  NETCorelog4net [(null)] - test log
+2017-04-26 13:36:54,155 [1] ERROR NETCorelog4net [(null)] - error
+2017-04-26 13:36:54,155 [1] INFO  NETCorelog4net [(null)] - linezero

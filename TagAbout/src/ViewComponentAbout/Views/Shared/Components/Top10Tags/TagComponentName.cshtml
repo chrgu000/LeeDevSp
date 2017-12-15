@@ -1,0 +1,17 @@
+﻿@model IEnumerable<ViewComponentAbout.ViewModels.TagViewModel>
+
+<style>
+    ul li {color:purple;font-style:italic;font-family:Arial,'Times New Roman', Times, serif;}
+</style>
+There is only 10 tags in the component.
+@if(Model.Any())
+{
+    <ul>
+        @foreach(var tag in Model)
+        {
+            <li>
+                [@tag.Id] @tag.Name
+            </li>
+        }
+    </ul>
+}

@@ -1,0 +1,39 @@
+<html>
+<head>
+<title>极简双向绑定</title>
+<script type="text/javascript">
+var obj = {};
+Object.defineProperty(obj,'hello',{
+	get:function(){
+		console.log('get方法被调用了');
+	},
+	set:function(val){
+		console.log('set方法被调用了，参数是'+val);
+	}
+});
+
+obj.hello; // get方法被调用了
+obj.hello = 'abcde'; // set方法被调用了，参数是abcde
+
+</script>
+
+
+<script type="text/javascript">
+var objTest = {};
+Object.defineProperty(objTest,'test',{
+	set:function(newVal){
+		document.getElementById('a').value = newVal;
+		document.getElementById('b').innerHTML = newVal;
+	}
+});
+
+document.addEventListener('keyup',function(e){
+	objTest.test = e.target.value;console.log('xx')
+});
+</script>
+</head>
+<body>
+	<input type="text" id="a" />
+	<span id="b"></span>
+</body>
+</html>
